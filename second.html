@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>HTML - create a simple navigaiton bar</title>
+<style type="text/css">
+nav {
+display: block;
+position: absolute;
+top: 0;
+width: 100%;
+background-color: green;
+}
+li{
+list-style-type: none;
+display: inline;
+margin-right: 20px;
+font-size:25px
+}
+a:link {
+color: #fff;
+text-decoration: none;
+}
+a:hover {
+color: orange;
+text-decoration: none;
+}
+li > ul {
+display: none
+}
+li:hover ul {display: block; position: absolute; left:200px;background-color:green;margin:0;}
+li:hover ul li a:link{display: block;margin-left:-30px;}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li>
+<a href="#">Work</a>
+<ul>
+<li><a href="#">Engineering</a></li>
+<li><a href="#">Telecom</a></li>
+<li><a href="#">Energy</a></li>
+<li><a href="#">Finance</a></li>
+<li><a href="#">Consultancy</a></li>
+</ul>
+</li>
+<li><a href="#">Resume</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<h1>Form 1</h1>
+<form action="process_form1.php" method="post">
+<!-- Form 1 controls go here -->
+<label for="name1">About:</label>
+<input type="text" id="name1" name="name1">
+<input type="submit" value="Submit Form 1">
+</form>
+<h1>Form 2</h1>
+<form action="process_form2.php" method="post">
+<!-- Form 2 controls go here -->
+<label for="work">Work:</label>
+<input type="work" id="email" name="work">
+<input type="submit" value="Submit Form 2">
+</form>
+<h1>Form 3</h1>
+<form action="process_form3.php" method="post">
+<!-- Form 3 controls go here -->
+<label for="work">CV:</label>
+<input type="work" id="email" name="work">
+<input type="submit" value="Submit Form 3">
+</form>
+<h1>Form 4</h1>
+<form action="process_form4.php" method="post">
+<!-- Form 3 controls go here -->
+<label for="work">Contact:</label>
+<input type="work" id="email" name="work">
+<input type="submit" value="Submit Form 4">
+</form>
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: green;
+      color: white;
+      text-align: center;
+    }
+    </style>
+    
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+</body>
+</html>
